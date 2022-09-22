@@ -1,0 +1,4 @@
+<a routerLink = "/" >Home</a> <a routerLink = "/add" >Add</a>
+<div *ngFor = "let painting of getFavoritesFromService()">
+    <span>{{painting.title}}</span>
+</div>

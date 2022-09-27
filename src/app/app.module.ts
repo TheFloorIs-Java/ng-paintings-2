@@ -13,6 +13,7 @@ import { PaintingCardComponent } from './components/painting-card/painting-card.
 import { AddMenuComponent } from './components/add-menu/add-menu.component';
 import { PaintingListComponent } from './components/painting-list/painting-list.component';
 import { FavoriteButtonComponent } from './components/favorite-button/favorite-button.component';
+import { DropDownFavoritesComponent } from './components/drop-down-favorites/drop-down-favorites.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FavoriteButtonComponent } from './components/favorite-button/favorite-b
     PaintingCardComponent,
     AddMenuComponent,
     PaintingListComponent,
-    FavoriteButtonComponent
+    FavoriteButtonComponent,
+    DropDownFavoritesComponent
   ],
   imports: [
     BrowserModule,

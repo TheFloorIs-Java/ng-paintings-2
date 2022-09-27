@@ -1,0 +1,6 @@
+<button (click) = "changeDropdown()">Collapse / uncollapse dropdown</button>
+<div *ngIf = "visible">
+<div *ngFor = "let painting of getFavoritesFromService()">
+    <span>{{painting.title}}</span>
+</div>
+</div>

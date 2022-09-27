@@ -14,8 +14,6 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getFavoritesFromService() : Array<painting> {
-    return this.pservice.favorites;
-  }
+  
 
 }

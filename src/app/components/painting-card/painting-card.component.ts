@@ -9,6 +9,8 @@ import { PaintingServiceService } from 'src/app/services/painting-service.servic
 })
 export class PaintingCardComponent implements OnInit {
 
+  style : any = {}
+
   @Input()
   Painting : painting = {title:"", url:"", artistID:0};
   constructor(private pservice : PaintingServiceService) { }
@@ -17,6 +19,7 @@ export class PaintingCardComponent implements OnInit {
   }
 
   addFavorite(): void{
+    this.style = {'font-weight' : 'bold'}
     this.pservice.favoritePainting(this.Painting);
   }
 }
